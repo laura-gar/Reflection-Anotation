@@ -1,3 +1,5 @@
+package co.edu.escuelaing.ecispringboot.reflectionexamples;
+
 import java.lang.reflect.Method;
 
 public class RunTests {
@@ -9,7 +11,7 @@ public class RunTests {
                     m.invoke(null);
                     passed++;
                 } catch (Throwable ex) {
-                    System.out.printf("Test %s failed: %s %n", m, ex.getCause());
+                    System.out.printf("co.edu.escuelaing.ecispringboot.reflectionexamples.Test %s failed: %s %n", m, ex.getCause());
                     failed++;
                 }}}
         System.out.printf("Passed: %d, Failed %d%n", passed, failed);
